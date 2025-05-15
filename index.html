@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jollibee Promo Link</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #fff8f0;
+    }
+
+    h1 {
+      color: #d92121;
+    }
+
+    .button {
+      background-color: #d92121;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #b01717;
+    }
+
+    .prank-message {
+      display: none;
+      margin-top: 30px;
+      font-size: 24px;
+      color: #ff6600;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Jollibee Exclusive Promo! 🎉</h1>
+  <p>Click the link below to claim your free Chickenjoy bucket!</p>
+
+  <button class="button" onclick="showPrank()">👉 Claim Now</button>
+
+  <div class="prank-message" id="prankMessage">
+    😆 It’s a prank, bes! Walang Chickenjoy! 🍗💀
+  </div>
+
+  <!-- 🔊 Sound effect -->
+  <audio id="prankSound" src="https://www.myinstants.com/media/sounds/trollolol.mp3"></audio>
+
+  <script>
+    function showPrank() {
+      // 1. Play sound
+      document.getElementById('prankSound').play();
+
+      // 2. Show popup
+      alert("😆 It’s a prank, bes! Walang Chickenjoy!");
+
+      // 3. Show hidden message
+      document.getElementById('prankMessage').style.display = 'block';
+
+      // 4. Optional redirect (e.g., Rickroll after 3 seconds)
+      setTimeout(() => {
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      }, 3000); // 3 seconds
+    }
+  </script>
+
+</body>
+</html>
